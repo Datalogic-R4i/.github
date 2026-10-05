@@ -1,0 +1,34 @@
+name: Bug
+description: Something that worked or should work does not. Opened in the repository where the defect lives
+type: Bug
+projects: ["Datalogic-R4i/3"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happens
+      description: The observed behaviour, with error messages or logs if you have them.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What should happen
+    validations:
+      required: true
+  - type: textarea
+    id: where
+    attributes:
+      label: Where and since when
+      description: Installation or customer, version, since when, how often. Steps to reproduce if known.
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impact
+      description: The Product Owner uses it to decide whether it enters the current sprint.
+      options:
+        - Blocks a customer in production
+        - Degrades a customer installation, with a workaround
+        - Minor, or found in test
+    validations:
+      required: true

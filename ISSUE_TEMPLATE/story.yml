@@ -1,0 +1,26 @@
+name: Story
+description: An increment that fits in one sprint and can be accepted by someone else
+type: Story
+projects: ["Datalogic-R4i/3"]
+body:
+  - type: textarea
+    id: story
+    attributes:
+      label: Story
+      description: "As a <who>, I want <what>, so that <why>. For a technical story, the outcome in one sentence."
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: A checklist someone other than the author can verify.
+      value: |
+        - [ ] 
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Context, dependencies, links. Security findings by category only.

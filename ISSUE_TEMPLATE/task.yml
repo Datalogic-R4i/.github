@@ -1,0 +1,24 @@
+name: Task
+description: Technical work that is not a user-facing increment (a spike, an upgrade, a step of a story)
+type: Task
+projects: ["Datalogic-R4i/3"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What and why
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      value: |
+        - [ ] 
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Parent story or epic, dependencies, links. Security findings by category only.

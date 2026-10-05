@@ -1,0 +1,22 @@
+name: Epic
+description: A large outcome that groups several stories and spans more than one sprint
+type: Epic
+projects: ["Datalogic-R4i/3"]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: The outcome, in one or two sentences. What is true when this epic is done?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What is in, and what is explicitly out.
+  - type: textarea
+    id: source
+    attributes:
+      label: Source
+      description: Documents, decisions or roadmap entries this epic comes from.
