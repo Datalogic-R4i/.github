@@ -22,13 +22,15 @@ body:
       label: Where and since when
       description: Installation or customer, version, since when, how often. Steps to reproduce if known.
   - type: dropdown
-    id: impact
+    id: severity
     attributes:
-      label: Impact
-      description: The Product Owner uses it to decide whether it enters the current sprint.
+      label: Severity
+      description: >-
+        Your proposal; the Product Owner confirms it on the board. It decides how fast the bug is
+        handled (working agreement, Bugs and severity): S1 enters the current sprint at once.
       options:
-        - Blocks a customer in production
-        - Degrades a customer installation, with a workaround
-        - Minor, or found in test
+        - S1 Critical - blocks a customer in production with no workaround, or loses or exposes data
+        - S2 Major - degrades a customer installation, with a workaround
+        - S3 Minor - minor, or found in test
     validations:
       required: true
